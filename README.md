@@ -1,27 +1,28 @@
-# [Project Name] - Serverless TODO App
+# 📝 Serverless TODO App (AWS Project)
 
-## 🛠️ What This Is
-A CRUD-based todo list app using a serverless architecture.
+This is a serverless TODO list app built on AWS using Lambda, API Gateway, and DynamoDB. It’s designed to showcase scalable, backendless architecture while keeping everything cost-effective and fast.
+
+## 🚀 Features
+- Create, update, delete, and retrieve tasks
+- Fully serverless (no EC2 or servers)
+- DynamoDB stores all task data
+- Secure and scalable API endpoints
+- Optional: Auth with Amazon Cognito
 
 ## ☁️ AWS Services Used
 - AWS Lambda
 - Amazon API Gateway
 - Amazon DynamoDB
-- Amazon Cognito
-- AWS S3 (optional for frontend)
+- (Optional) Amazon Cognito
+- (Optional) Amazon S3 for frontend
 
-## 🧱 Architecture Diagram
-![Architecture Diagram](./architecture.png)
+## 🔧 Architecture Diagram
+![Architecture](./architecture.png)
 
-## 🚀 How to Deploy
-1. Clone this repo
-2. Update environment variables in the Lambda files
-3. Deploy using AWS CLI or SAM
+## 🧱 Folder Structure
 
-## 🔐 Security Features
-- Fine-grained IAM roles
-- Cognito User Pool for auth
-
-## 📈 Future Improvements
-- Add SNS notifications
-- Add Step Functions for task workflows
+```bash
+lambda/           # Backend logic
+terraform/        # Infrastructure as Code (optional)
+README.md         # Project overview
+architecture.png  # AWS architecture diagram
